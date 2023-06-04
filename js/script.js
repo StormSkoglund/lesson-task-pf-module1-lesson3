@@ -11,10 +11,10 @@ console.log("The first number is smaller than the second");
 var age = 11;
 var minimumAge = "13";
 
-if (age === minimumAge) {
-  console.log("Passed");
+if (age >= parseInt(minimumAge)) {
+  console.log("Meets requirements");
 } else {
-  console.log("Not passed");
+  console.log("Does not meet requirements");
 }
 
 //Question 3:
@@ -22,7 +22,7 @@ if (age === minimumAge) {
 var income = "11.050";
 var maximumIncome = "13.075";
 
-if (income >= maximumIncome) {
+if (parseFloat(income) >= parseFloat(maximumIncome)) {
   console.log("Income is at maximum");
 } else {
   console.log("Income is NOT at maximum");
@@ -43,9 +43,7 @@ if (colour === "orange") {
 
 var invoicePaid = false;
 
-if (invoicePaid === true) {
-  console.log("Invoice was paid");
-} else {
+if (invoicePaid !== true) {
   console.log("Invoice was not paid");
 }
 
@@ -54,7 +52,7 @@ if (invoicePaid === true) {
 var selectedNumber = 11;
 var winningNumber = "15";
 
-if (selectedNumber !== winningNumber);
+if (selectedNumber !== parseInt(winningNumber));
 {
   console.log("You lose again");
 }
